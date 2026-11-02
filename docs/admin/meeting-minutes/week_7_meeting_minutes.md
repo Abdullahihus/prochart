@@ -1,0 +1,69 @@
+# Week 7 Meeting Minutes
+
+## Team Meeting — October 21, 2026
+
+**Duration:** 60 minutes
+
+### Attendance
+
+**Present:**
+- Abdullahi Husein
+- Evan Kweder
+- Nithin Manoj
+- Santiago Haces Febre
+- Sree Harsha Kalavagunta
+
+### Discussion Summary
+
+- Prepared questions for the upcoming meeting with Dr. Connolly.
+- Caught up on outstanding project documents and individual timesheets.
+- Worked on creating and organizing requirements within GitHub.
+- Added the project charter and required submission documents to the GitHub repository.
+
+### Key Decisions
+
+- Project documentation, requirements, and the project charter will be centralized and maintained in the GitHub repository.
+
+### Action Items
+
+- Finalize questions for Dr. Connolly.
+- Ensure all team members are up to date on their timesheets.
+- Complete the upload of all submission documents and requirements to the GitHub repository.
+
+### Next Focus
+
+- Meet with Dr. Connolly to clarify project questions and finalize requirements.
+
+---
+
+## TA Meeting — October 21, 2026
+
+**Duration:** 60 minutes
+
+### Attendance
+
+**Present:**
+- Abdullahi Husein
+- Evan Kweder
+- Nithin Manoj
+- Santiago Haces Febre
+- Sree Harsha Kalavagunta
+- Christopher Ebuka Ojukwu
+
+### Discussion Summary
+
+- Reported on the current progress of the project to the TA.
+- Discussed transitioning away from the initial planning phase and moving into active coding following the upcoming meeting with Dr. Connolly.
+
+### Key Decisions
+
+- The team will conclude the planning phase and begin implementation and coding immediately after meeting with Dr. Connolly.
+
+### Action Items
+
+- Conduct the meeting with Dr. Connolly to resolve any remaining planning questions.
+- Set up the development environment and begin coding initial features.
+
+### Next Focus
+
+- Transition into the active development and coding phase of the project.
