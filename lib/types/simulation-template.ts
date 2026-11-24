@@ -51,6 +51,8 @@ export type SimulationPatient = {
   currentMedications?: string[];
   admittingDiagnoses?: string[];
   medicalHistory?: string[];
+  admittingPhysician?: string;
+  careTeam?: string[];
 };
 
 // ---------------------------------------------------------------------------
@@ -107,6 +109,25 @@ export type SimulationHistoryAndPhysical = {
   physicalExam?: SimulationSystemEntry[];
   assessmentAndPlan?: string;
   signedBy?: string;
+};
+
+// ---------------------------------------------------------------------------
+// Vitals
+// ---------------------------------------------------------------------------
+
+/** Time-based vital sign recordings displayed in the vitals flowsheet. */
+export type SimulationVitalsEntry = {
+  id: string;
+  date?: string;
+  time: string;
+  bloodPressure?: string;
+  bloodPressureLocation?: string;
+  heartRate?: string;
+  respiratoryRate?: string;
+  temperature?: string;
+  temperatureRoute?: string;
+  oxygenSaturation?: string;
+  painLevel?: string;
 };
 
 // ---------------------------------------------------------------------------
@@ -283,6 +304,8 @@ export type SimulationTemplate = {
   patient: SimulationPatient;
   setup?: SimulationSetup;
   historyAndPhysical?: SimulationHistoryAndPhysical;
+  /** Timed vital sign recordings. */
+  vitals?: SimulationVitalsEntry[];
   orders?: SimulationOrder[];
   mar?: SimulationMAREntry[];
   labPanels?: SimulationLabPanel[];
@@ -354,6 +377,11 @@ export function tryNormalizeSimulationTemplate(
   if (isRecord(raw.setup)) template.setup = raw.setup as SimulationSetup;
   if (isRecord(raw.historyAndPhysical))
     template.historyAndPhysical = raw.historyAndPhysical as SimulationHistoryAndPhysical;
+
+  // Preserve timed vital sign recordings when loading simulation data.
+  if (Array.isArray(raw.vitals))
+  template.vitals = raw.vitals as SimulationVitalsEntry[];
+
   if (Array.isArray(raw.orders)) template.orders = raw.orders as SimulationOrder[];
   if (Array.isArray(raw.mar)) template.mar = raw.mar as SimulationMAREntry[];
   if (Array.isArray(raw.labPanels)) template.labPanels = raw.labPanels as SimulationLabPanel[];

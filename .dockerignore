@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# Next.js build output
+.next
+out
+
+# Git
+.git
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+
+# Testing output
+coverage
+playwright-report
+test-results
+
+# Editor and operating system files
+.vscode
+.idea
+.DS_Store
